@@ -25,6 +25,16 @@ namespace BLL
             return DAL_Customers.GetCustomers(parameters);
         }
 
+        public static Dictionary<int, string> GetCustomerNames(params object[] parameters)
+        {
+            List<VO_Customers> customers = GetCustomers(parameters);
+
+            return customers.ToDictionary(
+                c => c.ID_Customer,
+                c => c.FirstName + " " + c.LastName
+            ); 
+        }
+
         //UPDATE
         //UPDATE ADDRESS TOO
         public static string UpdateCustomer(VO_Customers customer)

@@ -19,11 +19,10 @@ namespace DAL
 
             try
             {
-                response = Data_Methods.execute_nonQuery("SP_Create_Bangboo",
+                response = Data_Methods.execute_nonQuery("SP_Create_BangbooSale",
                     "@Bangboo_ID", bangboo_sale.Bangboo_ID,
                     "@SalesReceipt_ID", bangboo_sale.SalesReceipt_ID,
-                    "@Quantity", bangboo_sale.Quantity,
-                    "@ID_BangbooSales", bangboo_sale.ID_BangbooSales
+                    "@Quantity", bangboo_sale.Quantity
                     );
 
                 if (response != 0)

@@ -49,7 +49,9 @@
     <Compile Include="BLL_Customers.cs" />
     <Compile Include="BLL_Employees.cs" />
     <Compile Include="BLL_Inventory.cs" />
+    <Compile Include="BLL_Inventory_Details.cs" />
     <Compile Include="BLL_SalesReceipts.cs" />
+    <Compile Include="BLL_Stock_Details.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

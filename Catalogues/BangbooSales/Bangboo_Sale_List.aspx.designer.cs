@@ -7,12 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bangboo3T.Catalogues.SalesReceipts
+namespace Bangboo3T.Catalogues.BangbooSales
 {
 
 
-    public partial class SalesReceipt_List
+    public partial class BangbooSale_Form
     {
+
+        /// <summary>
+        /// Return control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Return;
 
         /// <summary>
         /// Insert control.
@@ -24,12 +33,12 @@ namespace Bangboo3T.Catalogues.SalesReceipts
         protected global::System.Web.UI.WebControls.Button Insert;
 
         /// <summary>
-        /// GVReceipts control.
+        /// GVSales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GVReceipts;
+        protected global::System.Web.UI.WebControls.GridView GVSales;
     }
 }

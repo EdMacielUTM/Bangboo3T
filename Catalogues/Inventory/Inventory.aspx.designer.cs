@@ -15,15 +15,6 @@ namespace Bangboo3T.Catalogues.Inventory
     {
 
         /// <summary>
-        /// Insert control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Insert;
-
-        /// <summary>
         /// GVInventory control.
         /// </summary>
         /// <remarks>

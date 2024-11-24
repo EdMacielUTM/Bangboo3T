@@ -52,7 +52,7 @@ namespace DAL
 
             try
             {
-                DataSet ds_suppliers = Data_Methods.execute_DataSet("SP_List_Bangboos", parameters);
+                DataSet ds_suppliers = Data_Methods.execute_DataSet("SP_List_BangbooSuppliers", parameters);
 
                 foreach (DataRow dr in ds_suppliers.Tables[0].Rows)
                 {

@@ -50,7 +50,9 @@
     <Compile Include="VO_Customers.cs" />
     <Compile Include="VO_Employees.cs" />
     <Compile Include="VO_Inventory.cs" />
+    <Compile Include="VO_Inventory_Details.cs" />
     <Compile Include="VO_SalesReceipts.cs" />
+    <Compile Include="VO_Stock_Details.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

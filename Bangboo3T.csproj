@@ -100,7 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Catalogues\BangbooSales\Bangboo_Sale.aspx" />
+    <Content Include="Catalogues\BangbooSales\Bangboo_Sale_List.aspx" />
+    <Content Include="Catalogues\BangbooSales\Bangboo_Sale_Form.aspx" />
     <Content Include="Catalogues\BangbooSuppliers\BangbooSupplier_Form.aspx" />
     <Content Include="Catalogues\BangbooSuppliers\BangbooSupplier_List.aspx" />
     <Content Include="Catalogues\BangbooSupplyDetails\BangbooSupplyDetail_Form.aspx" />
@@ -206,12 +207,19 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Catalogues\BangbooSales\Bangboo_Sale.aspx.cs">
-      <DependentUpon>Bangboo_Sale.aspx</DependentUpon>
+    <Compile Include="Catalogues\BangbooSales\Bangboo_Sale_List.aspx.cs">
+      <DependentUpon>Bangboo_Sale_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Catalogues\BangbooSales\Bangboo_Sale.aspx.designer.cs">
-      <DependentUpon>Bangboo_Sale.aspx</DependentUpon>
+    <Compile Include="Catalogues\BangbooSales\Bangboo_Sale_List.aspx.designer.cs">
+      <DependentUpon>Bangboo_Sale_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogues\BangbooSales\Bangboo_Sale_Form.aspx.cs">
+      <DependentUpon>Bangboo_Sale_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogues\BangbooSales\Bangboo_Sale_Form.aspx.designer.cs">
+      <DependentUpon>Bangboo_Sale_Form.aspx</DependentUpon>
     </Compile>
     <Compile Include="Catalogues\BangbooSuppliers\BangbooSupplier_Form.aspx.cs">
       <DependentUpon>BangbooSupplier_Form.aspx</DependentUpon>

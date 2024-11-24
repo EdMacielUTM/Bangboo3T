@@ -50,7 +50,9 @@
     <Compile Include="DAL_BangbooSupplyDetails.cs" />
     <Compile Include="DAL_Employees.cs" />
     <Compile Include="DAL_Inventory.cs" />
+    <Compile Include="DAL_Inventory_Details.cs" />
     <Compile Include="DAL_SalesReceipts.cs" />
+    <Compile Include="DAL_Stock_Details.cs" />
     <Compile Include="Data_Methods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

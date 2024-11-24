@@ -25,6 +25,16 @@ namespace BLL
             return DAL_Employees.GetEmployees(parameters);
         }
 
+        public static Dictionary<int, string> GetEmployeeNames(params object[] parameters)
+        {
+            List<VO_Employees> employees = GetEmployees(parameters);
+
+            return employees.ToDictionary(
+                c => c.ID_Employee,
+                c => c.FirstName + " " + c.LastName
+            );
+        }
+
         //UPDATE
         //UPDATE ADDRESS TOO
         public static string UpdateEmployee(VO_Employees employee)

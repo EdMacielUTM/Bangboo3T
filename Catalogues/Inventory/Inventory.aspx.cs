@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,42 +12,40 @@ namespace Bangboo3T.Catalogues.Inventory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                loadGrid();
+            }
         }
 
-        protected void Insert_Click(object sender, EventArgs e)
+        public void loadGrid()
         {
+            GVInventory.DataSource = BLL_Inventory_Details.GetInventoryDetails();
 
-        }
-
-        protected void GVBangboos_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-
-        }
-
-        protected void GVInventory_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-
+            GVInventory.DataBind();
         }
 
         protected void GVInventory_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+            if (e.CommandName == "Restock")
+            {
+                //recupero el indice en funcion de aquel elemento que haya detonado el evento
+                int varIndex = int.Parse(e.CommandArgument.ToString());
+                //recupero el ID en funcion del indice que recuperamos anteriormente
+                string id = GVInventory.DataKeys[varIndex].Values["ID_Bangboo"].ToString();
+                //redireccionamos al formulario de edicion, pasando como parametro el ID
+                Response.Redirect($"~/Catalogues/BangbooSupplyDetails/BangbooSupplyDetail_Form.aspx?Id={id}");
+            }
 
-        }
-
-        protected void GVInventory_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-
-        }
-
-        protected void GVInventory_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-
-        }
-
-        protected void GVInventory_RowUpdating(object sender, GridViewUpdateEventArgs e)
-        {
-
+            if (e.CommandName == "Details")
+            {
+                //recupero el indice en funcion de aquel elemento que haya detonado el evento
+                int varIndex = int.Parse(e.CommandArgument.ToString());
+                //recupero el ID en funcion del indice que recuperamos anteriormente
+                string id = GVInventory.DataKeys[varIndex].Values["ID_Bangboo"].ToString();
+                //redireccionamos al formulario de edicion, pasando como parametro el ID
+                Response.Redirect($"~/Catalogues/BangbooSupplyDetails/BangbooSupplyDetail_List.aspx?Id={id}");
+            }
         }
     }
 }

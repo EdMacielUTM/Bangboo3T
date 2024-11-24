@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bangboo3T.Catalogues.BangbooSupplyDetails
+namespace Bangboo3T.Catalogues.BangbooSales
 {
 
 
-    public partial class BangbooSupplyDetail_Form
+    public partial class Bangboo_Sale_Form
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace Bangboo3T.Catalogues.BangbooSupplyDetails
         protected global::System.Web.UI.WebControls.Label Title_;
 
         /// <summary>
-        /// Subtitle_ control.
+        /// Return control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Subtitle_;
+        protected global::System.Web.UI.WebControls.Button Return;
 
         /// <summary>
         /// lblBangboo control.
@@ -51,40 +51,31 @@ namespace Bangboo3T.Catalogues.BangbooSupplyDetails
         protected global::System.Web.UI.WebControls.DropDownList ddlBangboo;
 
         /// <summary>
-        /// lblSupplier control.
+        /// lblQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSupplier;
+        protected global::System.Web.UI.WebControls.Label lblQuantity;
 
         /// <summary>
-        /// ddlSupplier control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSupplier;
+        protected global::System.Web.UI.WebControls.Label lblMessage;
 
         /// <summary>
-        /// lblAmount control.
+        /// txtQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAmount;
-
-        /// <summary>
-        /// txtAmount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAmount;
+        protected global::System.Web.UI.WebControls.TextBox txtQuantity;
 
         /// <summary>
         /// lblCost control.
@@ -105,6 +96,24 @@ namespace Bangboo3T.Catalogues.BangbooSupplyDetails
         protected global::System.Web.UI.WebControls.TextBox txtCost;
 
         /// <summary>
+        /// lblSubtotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSubtotal;
+
+        /// <summary>
+        /// txtSubtotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSubtotal;
+
+        /// <summary>
         /// imgBangboo control.
         /// </summary>
         /// <remarks>
@@ -114,12 +123,12 @@ namespace Bangboo3T.Catalogues.BangbooSupplyDetails
         protected global::System.Web.UI.WebControls.Image imgBangboo;
 
         /// <summary>
-        /// btnRestock control.
+        /// btnSale control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRestock;
+        protected global::System.Web.UI.WebControls.Button btnSale;
     }
 }
