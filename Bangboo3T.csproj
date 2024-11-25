@@ -164,6 +164,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WebServices\Bangboos\Bangboo_List.asmx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -352,11 +353,14 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebServices\Bangboos\Bangboo_List.asmx.cs">
+      <DependentUpon>Bangboo_List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Images\" />
-    <Folder Include="WebServices\Bangboos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -373,6 +377,10 @@
     <ProjectReference Include="BLL\BLL.csproj">
       <Project>{3782BCA9-F260-4E42-8BC6-E3C82217D348}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="ClassLibrary1\DAL.csproj">
+      <Project>{9D052791-D747-41FA-9BA6-11341DD88E2F}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="VO\VO.csproj">
       <Project>{E1B1ADCF-7C08-4CFE-8E0F-12E64C9CB3E2}</Project>
