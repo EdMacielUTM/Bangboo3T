@@ -164,7 +164,17 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="WebServices\Bangboos\Bangboo_List.asmx" />
+    <Content Include="WebServices\Bangboos\Address_Service.asmx" />
+    <Content Include="WebServices\Bangboos\BangbooSale_Service.asmx" />
+    <Content Include="WebServices\Bangboos\BangbooSupplier_Service.asmx" />
+    <Content Include="WebServices\Bangboos\BangbooSupplyDetail_Service.asmx" />
+    <Content Include="WebServices\Bangboos\Bangboo_Service.asmx" />
+    <Content Include="WebServices\Bangboos\Customer_Service.asmx" />
+    <Content Include="WebServices\Bangboos\Employee_Service.asmx" />
+    <Content Include="WebServices\Bangboos\Inventory_Detail_Service.asmx" />
+    <Content Include="WebServices\Bangboos\Inventory_Service.asmx" />
+    <Content Include="WebServices\Bangboos\SalesReceipt_Service.asmx" />
+    <Content Include="WebServices\Bangboos\Stock_Detail_Service.asmx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -353,8 +363,48 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebServices\Bangboos\Bangboo_List.asmx.cs">
-      <DependentUpon>Bangboo_List.asmx</DependentUpon>
+    <Compile Include="WebServices\Bangboos\Address_Service.asmx.cs">
+      <DependentUpon>Address_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\BangbooSale_Service.asmx.cs">
+      <DependentUpon>BangbooSale_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\BangbooSupplier_Service.asmx.cs">
+      <DependentUpon>BangbooSupplier_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\BangbooSupplyDetail_Service.asmx.cs">
+      <DependentUpon>BangbooSupplyDetail_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\Bangboo_Service.asmx.cs">
+      <DependentUpon>Bangboo_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\Customer_Service.asmx.cs">
+      <DependentUpon>Customer_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\Employee_Service.asmx.cs">
+      <DependentUpon>Employee_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\Inventory_Detail_Service.asmx.cs">
+      <DependentUpon>Inventory_Detail_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\Inventory_Service.asmx.cs">
+      <DependentUpon>Inventory_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\SalesReceipt_Service.asmx.cs">
+      <DependentUpon>SalesReceipt_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Bangboos\Stock_Detail_Service.asmx.cs">
+      <DependentUpon>Stock_Detail_Service.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
