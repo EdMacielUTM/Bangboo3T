@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using VO;
@@ -21,6 +22,17 @@ namespace BLL
         {
             return DAL_Addresses.GetAddresses(parameters);
         }
+
+        public static Dictionary<int, string> GetFullAddresses(params object[] parameters)
+        {
+            List<VO_Addresses> addresses = GetAddresses(parameters);
+
+            return addresses.ToDictionary(
+                c => c.ID_Address,
+                c => c.Street_Number + "\n" + c.City + ", " + c.State + " " + c.ZipCode
+            );
+        }
+
         //UPDATE
         public static string UpdateAddress(VO_Addresses address)
         {

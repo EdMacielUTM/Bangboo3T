@@ -21,7 +21,7 @@ namespace DAL
             try
             {
                 response = Data_Methods.execute_nonQuery("SP_Create_BangbooSupplier",
-                    "@ID_Supplier", supplier.ID_Supplier,
+                    "@Address_ID", supplier.Address_ID,
                     "@Name", supplier.Name,
                     "@Email", supplier.Email,
                     "@Phone", supplier.Phone
@@ -76,7 +76,7 @@ namespace DAL
 
             try
             {
-                response = Data_Methods.execute_nonQuery("SP_Update_Bangboo",
+                response = Data_Methods.execute_nonQuery("SP_Update_BangbooSupplier",
                     "@ID_Supplier", supplier.ID_Supplier,
                     "@Name", supplier.Name,
                     "@Email", supplier.Email,
@@ -112,7 +112,7 @@ namespace DAL
 
             try
             {
-                response = Data_Methods.execute_nonQuery("SP_Delete_Supplier", "@ID_Supplier", id);
+                response = Data_Methods.execute_nonQuery("SP_Delete_BangbooSupplier", "@ID_Supplier", id);
 
                 if (response != 0)
                 {

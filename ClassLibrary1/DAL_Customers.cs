@@ -20,7 +20,6 @@ namespace DAL
             try
             {
                 response = Data_Methods.execute_nonQuery("SP_Create_Customer",
-                    "@ID_Customer", customer.ID_Customer,
                     "@FirstName", customer.FirstName,
                     "@LastName", customer.LastName,
                     "@PhoneNumber", customer.PhoneNumber,

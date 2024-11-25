@@ -5,6 +5,9 @@
         <div class="row">
             <asp:Label ID="Title_" runat="server" CssClass="modal-title" Text=""></asp:Label>
             <asp:Label ID="Subtitle_" runat="server" CssClass="modal-title" Text=""></asp:Label>
+            <p>
+                <asp:Button ID="Return" runat="server" Text="Return to Receipts" CssClass="btn btn-primary btn-xs" Width="170px" OnClick="Return_Click" />
+            </p>
         </div>
         <div class="row">
             <div class="col-md-12">

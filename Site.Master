@@ -6,13 +6,37 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - By me :)</title>
+    <style>
+        @font-face {
+            font-family: 'ZZZglyph';
+            src: url('~/_assets/fonts/ZZZ-glyph.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
 
+        @font-face {
+            font-family: 'ZZZmain';
+            src: url('~/_assets/fonts/ZZZ-main.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ZZZsystem';
+            src: url('~/_assets/fonts/ZZZ-system.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'ZZZmain', sans-serif;
+        }
+    </style>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -41,16 +65,20 @@
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                <a class="navbar-brand" runat="server" href="~/">
+                    <img src="/Assets/Images/logo.gif" alt="Bangboo i-Shop" style="filter: invert(1); height: 100px;" /></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogues/Bangboos/Bangboo_List">Bangboos</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogues/Inventory/Inventory">Inventory</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogues/SalesReceipts/SalesReceipt_List">Create Receipt</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogues/Customers/Customer_List">Customers</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogues/Employees/Employee_List">Employees</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogues/BangbooSuppliers/BangbooSupplier_List">Suppliers</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +88,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Bangboo i-Shop</p>
             </footer>
         </div>
     </form>

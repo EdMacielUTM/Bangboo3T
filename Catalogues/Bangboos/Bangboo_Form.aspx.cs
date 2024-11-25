@@ -128,5 +128,11 @@ namespace Bangboo3T.Catalogues.Bangboos
             }
             SweetAlert.Sweet_Alert(title, response, type, this.Page, this.GetType(), "Bangboo_List");
         }
+
+
+        protected void Return_Click(object sender, EventArgs e)
+        {
+            Response.Redirect($"Bangboo_List.aspx");
+        }
     }
 }

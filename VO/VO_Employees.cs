@@ -37,7 +37,7 @@ namespace VO
             _LastName = dataRow["LastName"].ToString();
             _PhoneNumber = dataRow["PhoneNumber"].ToString();
             _Email = dataRow["Email"].ToString();
-            _HireDate = dataRow["HireDate"].ToString();
+            _HireDate = dataRow["HireDate"].ToString().Split(' ')[0];
             _Salary = float.Parse(dataRow["Salary"].ToString());
             _Address_ID = int.Parse(dataRow["Address_ID"].ToString());
         }

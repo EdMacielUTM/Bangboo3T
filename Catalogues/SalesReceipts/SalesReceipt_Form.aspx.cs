@@ -60,6 +60,12 @@ namespace Bangboo3T.Catalogues.SalesReceipts
             }
         }
 
+
+        protected void Return_Click(object sender, EventArgs e)
+        {
+            Response.Redirect($"SalesReceipt_List.aspx");
+        }
+
         protected void btnReceipt_Click(object sender, EventArgs e)
         {
             int _customerid = int.Parse(ddlCustomer.SelectedValue);
